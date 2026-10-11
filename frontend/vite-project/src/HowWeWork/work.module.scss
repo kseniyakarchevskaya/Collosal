@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.workflow{
+    width: 100%;
+    background-color: #0B0B22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    .center{
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        p{
+            color: #16FCD2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1{
+            color: #fff;
+            font-size: 2.1rem;
+            letter-spacing: 2px;
+            text-align: center;
+            width: 25vw;
+            line-height: 1.7;
+            height: 30vh;
+        }
+    }
+}
+.step1{
+    width: 100%;
+    background-color: #0B0B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center{
+        width: 65%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .image{
+            width: 30vw;
+            height: 45vh;
+            background-image: url('../assets/bac5.png');
+            background-repeat: no-repeat;
+            background-position: 100%;
+        }
+        .text{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            span{
+                color: #16FCD2;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                
+            }
+            h2{
+                color: #fff;
+                font-size: 2rem;
+                width: 22vw;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.7); 
+                width: 26vw;
+                line-height: 2.4;
+
+            }
+        }
+    }
+}
+.step2{
+    width: 100%;
+    background-color: #0B0B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center{
+        display: flex;
+        width: 60%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .image{
+            width: 24vw;
+            height: 45vh;
+            background-image: url('../assets/bac6.png');
+            background-repeat: no-repeat;
+            background-position: 100%;
+        }
+        .text{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            span{
+                color: #16FCD2;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                
+            }
+            h2{
+                color: #fff;
+                font-size: 2rem;
+                width: 25vw;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.7); 
+                width: 26vw;
+                line-height: 2.4;
+
+            }
+        }
+    }
+}
+.step3{
+    width: 100%;
+    background-color: #0B0B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .center{
+        display: flex;
+        width: 60%;
+        height: 60vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .image{
+            background-image: url('../assets/bac7.png');
+            width: 24vw;
+            height: 45vh;
+            background-repeat: no-repeat;
+            background-position: 100%;
+        }
+        .text{
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            span{
+                color: #16FCD2;
+                font-size: 1rem;
+                letter-spacing: 2px;
+                
+            }
+            h2{
+                color: #fff;
+                font-size: 2rem;
+                width: 26vw;
+            }
+            p{
+                color: rgba(255, 255, 255, 0.7); 
+                width: 25vw;
+                line-height: 2.4;
+
+            }
+        }
+    }
+}

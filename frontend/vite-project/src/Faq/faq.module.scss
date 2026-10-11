@@ -1,0 +1,156 @@
+.statistic {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        height: 25vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 30vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.accordionSectionRoot {
+    width: 100vw;
+    height: 77vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .accordionMainLayout {
+        width: 65vw; 
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .leftTabsMenu {
+            width: 18vw;
+            background-color: #ffffff0e;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .tabItem {
+                width: 100%;
+                height: 5.5vh; 
+                border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                box-sizing: border-box;
+                transition: background-color 0.2s ease;
+
+                &::before {
+                    content: "";
+                    width: 2vw;
+                    height: 100%;
+                    display: block;
+                }
+
+                span {
+                    color: #fff;
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.04);
+                }
+            }
+
+            .tabActive {
+                background-color: rgba(255, 255, 255, 0.03);
+                
+                span {
+                    color: #ffffff;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .rightAccordionList {
+            width: 45vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            .accordionCard {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+                box-sizing: border-box;
+
+                .questionHeaderBar {
+                    width: 100%;
+                    height: 9vh; 
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    h2 {
+                        color: #ffffff;
+                        font-size: 1.15rem;
+                        font-weight: 600;
+                        letter-spacing: -0.2px;
+                    }
+
+                    .arrowIcon {
+                        color: #ffffff;
+                        font-size: 1rem;
+                        font-weight: 400;
+                    }
+                }
+                .answerBodyRow {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    &::before, &::after {
+                        content: "";
+                        height: 2.5vh;
+                        width: 100%;
+                        display: block;
+                    }
+
+                    p {
+                        color: rgba(255, 255, 255, 0.5);
+                        font-size: 0.98rem;
+                        line-height: 1.6;
+                        font-weight: 400;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+.statistic {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        height: 25vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 24vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.blogSectionRoot {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0b0b22;
+    font-family: 'Inter', sans-serif;
+
+    .blogMainLayout {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 8vh;
+
+        .blogCardsGrid {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 6vh 1vw;
+
+            .blogCard {
+                flex-basis: 31%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2.5vh;
+
+                .imageLinkWrapper {
+                    width: 100%;
+                    height: 25vh;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    .coverImage {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        transition: transform 0.3s ease;
+                    }
+                }
+
+                .cardTextZone {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 1.2vh;
+                    width: 100%;
+
+                    h2 {
+                        color: #ffffff;
+                        font-size: 1.15rem;
+                        font-weight: 600;
+                        line-height: 1.4;
+                    }
+
+                    p {
+                        color: rgba(255, 255, 255, 0.4);
+                        font-size: 1.1rem;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        width: 18vw;
+                    }
+                }
+
+                .authorMetaZone {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 0.8vw;
+                    width: 100%;
+
+                    .avatarCircle {
+                        width: 2.8vw;
+                        height: 2.8vw;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .authorDetails {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 0.4vh;
+
+                        h3 {
+                            color: #ffffff;
+                            font-size: 1rem;
+                            font-weight: 500;
+                        }
+
+                        p {
+                            color: #fff;
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+
+        .loadMoreActionZone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 8vh;
+
+            .loadMoreBtn {
+                width: 13vw;
+                height: 5.5vh;
+                background-color: rgba(255, 255, 255, 0.06);
+                border: none;
+                color: #ffffff;
+                font-size: 1rem;
+                font-weight: 600;
+                border-radius: 4px;
+                cursor: pointer;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}

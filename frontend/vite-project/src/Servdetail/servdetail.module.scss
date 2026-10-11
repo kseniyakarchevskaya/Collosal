@@ -1,0 +1,228 @@
+.statistic {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        height: 25vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 26vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.statistic1 {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 33vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.statistic2 {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 15vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 30vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.featuresSectionRoot {
+    width: 100%;
+    height: 80vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .featuresMainLayout {
+        width: 69vw; 
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .leftGraphicsWrapper {
+            width: 47%;
+            height: 52vh; 
+            background-image: url('../src/assets/bac10.png'); 
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .rightContentZone {
+            width: 48%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 5vh; 
+            height: 58vh;
+
+            .textParagraphGroup {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 3.5vh; 
+                width: 100%;
+
+                p {
+                    color: rgba(255, 255, 255, 0.6); 
+                    font-size: 1.1rem;
+                    line-height: 2.3;
+                    font-weight: 400;
+                    text-align: justify;
+                    width: 28vw;
+                }
+            }
+            .featuresBulletList {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2.2vh; 
+                list-style: none;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    gap: 1.2vw; 
+                    .squareMarker {
+                        width: 6px;
+                        height: 6px;
+                        background-color: #ffffff;
+                        border-radius: 1px; 
+                        flex-shrink: 0;
+                    }
+                    p {
+                        color: #ffffff; 
+                        font-size: 1.1rem;
+                        font-weight: 500;
+                        line-height: 1.4;
+                    }
+                }
+            }
+        }
+    }
+}
+.featuresSectionRoot1 {
+    width: 100%;
+    height: 85vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+    .featuresGridContainer1 {
+        width: 60vw; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 4vh 1vw; 
+
+        .featureCard1 {
+            flex-basis: 31%; 
+            height: 29vh; 
+            background-color: #ffffff10;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            border-radius: 3px;
+            display: flex;
+            justify-content: center; 
+            align-items: center;    
+            box-sizing: border-box;
+
+            .cardContentWrapper1 {
+                width: 82%;
+                height: 76%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+                align-items: flex-start; 
+
+                .iconArea1 {
+                    width: 2.5vw;
+                    height: 2.5vw;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                    }
+                }
+                h3 {
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                   
+                }
+                p {
+                    color: rgba(255, 255, 255, 0.4); 
+                    font-size: 1rem;
+                    line-height: 2.3;
+                    font-weight: 400;
+                    width: 12vw;
+                }
+            }
+        }
+    }
+}

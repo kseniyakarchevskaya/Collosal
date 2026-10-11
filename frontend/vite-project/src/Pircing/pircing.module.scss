@@ -1,0 +1,161 @@
+.statistic {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        height: 25vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 30vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.pricingSectionRoot {
+    width: 100vw;
+    height: 60vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .pricingMainLayout {
+        width: 76vw; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cardsGridRow {
+            width: 86%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .planCard {
+                flex-basis: 31%; 
+                height: 50vh; 
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between; 
+                align-items: center;
+                box-sizing: border-box;
+
+                .cardHeaderRow, .featuresListZone, .btnActionZone {
+                    width: 82%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+                .cardHeaderRow {
+                    height: 14vh;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+
+                    h3 {
+                        color: #ffffff;
+                        font-size: 1.2rem;
+                        font-weight: 700;
+                    }
+
+                    .priceZone {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+                        gap: 0.5vh;
+
+                        span {
+                            color: rgba(255, 255, 255, 0.3);
+                            font-size: 1rem;
+                            font-weight: 400;
+                        }
+
+                        h2 {
+                            color: #ffffff;
+                            font-size: 1.9rem;
+                            font-weight: 700;
+                            letter-spacing: -0.5px;
+                        }
+                    }
+                }
+
+                .featuresListZone {
+                    height: 26vh;
+                    justify-content: center;
+                    gap: 2.2vh; 
+
+                    p {
+                        color: rgba(255, 255, 255, 0.7);
+                        font-size: 1rem;
+                        font-weight: 400;
+                        text-align: center;
+                    }
+                }
+
+                .btnActionZone {
+                    height: 12vh;
+                    justify-content: center;
+                    width: 70%;
+                    button {
+                        width: 100%;
+                        height: 5.5vh;
+                        border: none;
+                        font-size: 0.95rem;
+                        font-weight: 600;
+                        border-radius: 4px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: opacity 0.2s ease;
+
+                        &:hover {
+                            opacity: 0.9;
+                        }
+                    }
+                    .whiteDetailBtn {
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                    .purpleDetailBtn {
+                        background-color: #6016fc;
+                        color: #ffffff;
+                    }
+                }
+            }
+            .purpleCard {
+                background-color: #ffffff0e;
+            }
+
+            .blueCard {
+                background-color: #ffffff0e;
+            }
+
+            .magentaCard {
+               background-color: #ffffff0e;
+            }
+        }
+    }
+}

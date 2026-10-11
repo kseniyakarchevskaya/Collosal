@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+.quoteSectionRoot {
+    width: 100%;
+    height: 80vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .quoteMainLayout {
+        width: 65%; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftInfoZone {
+            width: 44%;
+            display: flex;
+            flex-direction: column;
+            height: 64vh;
+            gap: 4vh; 
+
+            .greenLabel {
+                color: #16FCD2; 
+                font-size: 1rem;
+                font-weight: 400;
+                letter-spacing: 1.7px;
+            }
+
+            h1 {
+                color: #ffffff;
+                font-size: 2.2rem;
+                font-weight: 600;
+                line-height: 1.4;
+            }
+
+            .description {
+                color: rgba(255, 255, 255, 0.4);
+                font-size: 1rem;
+                line-height: 1.6;
+                font-weight: 300;
+            }
+
+            .actionBtnArea {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                height: 6.5vh;
+
+                .askUsStaticBtn {
+                    width: 11vw;
+                    height: 6vh;
+                    background-color: rgba(255, 255, 255, 0.06);
+                    border: none;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+        .rightFormCard {
+            width: 45%;
+            height: 63vh; 
+            background-color: #ffffff10;
+            border-radius: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .mainFormElement {
+                width: 84%; 
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 3.5vh; 
+
+                label {
+                    color: rgba(255, 255, 255, 0.4);
+                    font-size: 1rem;
+                    font-weight: 400;
+                }
+                input[type='text'],
+                input[type='email'],
+                select,
+                textarea {
+                    background-color: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.08);
+                    border-radius: 4px;
+                    color: #ffffff;
+                    font-size: 1rem;
+                    outline: none;
+                    width: 100%;
+                    height: 6vh;
+                    box-sizing: border-box;
+                    transition: border-color 0.2s ease;
+
+                    &:focus {
+                        border-color: #6016fc; 
+                    }
+                }
+                .selectWrapper {
+                    width: 100%;
+                    position: relative; 
+                    display: flex;
+                    align-items: center;
+
+                    select {
+                        appearance: none; 
+                        cursor: pointer;
+                        option {
+                            background-color: #0b0b22;
+                            color: #ffffff;
+                        }
+                    }
+
+                    .selectArrow {
+                        position: absolute;
+                        right: 1vw;
+                        color: rgba(255, 255, 255, 0.3);
+                        font-size: 0.75rem;
+                        pointer-events: none; 
+                    }
+                }
+
+                .inputGroup {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    gap: 1vh;
+                    width: 100%;
+                    height: 9vh;
+                    textarea {
+                        height: 18vh;
+                        resize: none;
+                    }
+                }
+                .inputDoubleRow {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    gap: 1.5vw;
+
+                    .inputGroup {
+                        flex-basis: 48%;
+                    }
+                }
+                .btnActionZone {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 6.5vh;
+
+                    .sendQuoteBtn {
+                        width: 100%;
+                        height: 5vh;
+                        background-color: #6016fc;
+                        border: none;
+                        border-radius: 4px;
+                        color: #ffffff;
+                        font-size: 1rem;
+                        font-weight: 600;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: background-color 0.2s ease;
+                        &:hover {
+                            background-color: #4e0ecc;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

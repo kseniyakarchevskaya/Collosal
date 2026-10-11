@@ -1,0 +1,437 @@
+.statistic {
+    width: 100%;
+    background-color: #0b0b22;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35vh;
+    .center {
+        width: 65%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1.2px solid #ffffff23;
+        height: 25vh;
+        p {
+            color: #16fcd2;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            height: 4vh;
+        }
+        h1 {
+            color: #fff;
+            font-size: 2.2rem;
+            width: 26vw;
+            letter-spacing: 2px;
+            line-height: 1.7;
+            text-align: center;
+        }
+    }
+}
+.designSectionRoot {
+    width: 100%;
+    height: 60vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .designMainLayout {
+        width: 76vw; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftGraphicsWrapper {
+            width: 45%;
+            height: 67vh; 
+            background-image: url('../src/assets/bac9.png'); 
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .rightContentZone {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5vh; 
+            .textHeaderGroup {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2vh;
+                width: 100%;
+                span {
+                    color: #16FCD2; 
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    letter-spacing: 1.5px;
+                }
+                h1 {
+                    color: #ffffff;
+                    font-size: 2.1rem;
+                    font-weight: 600;
+                    line-height: 1.35;
+                    width: 26vw;
+                }
+                p {
+                    color: rgba(255, 255, 255, 0.4); 
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    width: 26vw;
+                }
+            }
+            .miniCardsRow {
+                width: 78%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 1.5vw;
+                .miniCard {
+                    flex-basis: 48%;
+                    height: 15vh; 
+                    background-color: #ffffff0a;
+                    border: 1px solid #ffffff2c;
+                    border-radius: 3px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center; 
+                    align-items: center;
+                    gap: 1.5vh;
+                    .cardHeaderTitle, p {
+                        width: 84%; 
+                    }
+                    .cardHeaderTitle {
+                        display: flex;
+                        align-items: center;
+                        gap: 0.8vw; 
+                        .iconArea {
+                            width: 1.8vw;
+                            height: 1.8vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        h3 {
+                            color: #ffffff;
+                            font-size: 1.1rem;
+                            font-weight: 600;
+                        }
+                    }
+                    p {
+                        color: rgba(255, 255, 255, 0.4);
+                        font-size: 1rem;
+                        line-height: 1.5;
+                        font-weight: 400;
+                        width: 12vw;
+                    }
+                }
+            }
+            .linkActionZone {
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+                width: 78%;
+                height: 4vh;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8vw; 
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    transition: opacity 0.2s ease;
+                    list-style-type: none;
+                    text-decoration: none;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                    .arrowIcon {
+                        font-size: 1.1rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+.devSectionRoot {
+    width: 100%;
+    height: 75vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .devMainLayout {
+        width: 70vw; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .leftContentZone {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 4.5vh; 
+
+            .textHeaderGroup {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2vh;
+                width: 100%;
+
+                span {
+                    color: #16FCD2; 
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    letter-spacing: 1.5px;
+                }
+
+                h1 {
+                    color: #ffffff;
+                    font-size: 2.1rem;
+                    font-weight: 600;
+                    line-height: 1.7;
+                    width: 26vw;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.4);
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    width: 28vw;
+                }
+            }
+            .rowsListGroup {
+                width: 72%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2vh; 
+
+                .wideRowCard {
+                    width: 100%;
+                    height: 6.5vh; 
+                    background-color: #ffffff0e;
+                    border: 1px solid rgba(255, 255, 255, 0.04);
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    .innerContentRow {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1.2vw; 
+
+                        
+
+                        .iconArea {
+                            width: 1.8vw;
+                            height: 1.8vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+
+                        h3 {
+                            color: #ffffff;
+                            font-size: 1.05rem;
+                            font-weight: 500;
+                            width: 21vw;
+                        }
+                    }
+                }
+            }
+            .linkActionZone {
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+                width: 81%;
+                height: 4vh;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8vw; 
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    transition: opacity 0.2s ease;
+                    list-style-type: none;
+
+                    &:hover {
+                        opacity: 0.8;
+                    }
+
+                    .arrowIcon {
+                        font-size: 1.1rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .rightGraphicsWrapper {
+            width: 41%;
+            height: 55vh; 
+            background-image: url('../src/assets/bac10.png'); 
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: contain;
+        }
+    }
+}
+.mainSectionRoot {
+    width: 100%;
+    height: 83vh;
+    background-color: #0b0b22; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter", sans-serif;
+
+    .mainLayout {
+        width: 76vw; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .leftGraphicsWrapper {
+            width: 45%;
+            height: 55vh; 
+            background-image: url('../src/assets/bac11.png'); 
+            background-repeat: no-repeat;
+            background-position: center left;
+            background-size: contain;
+        }
+        .rightContentZone {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5vh; 
+            .textHeaderGroup {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                gap: 2vh;
+                width: 100%;
+
+                span {
+                    color: #16FCD2; 
+                    font-size: 1.1rem;
+                    font-weight: 400;
+                    letter-spacing: 1.5px;
+                }
+
+                h1 {
+                    color: #ffffff;
+                    font-size: 2.1rem;
+                    font-weight: 600;
+                    line-height: 1.6;
+                    width: 25vw;
+                }
+
+                p {
+                    color: rgba(255, 255, 255, 0.4); 
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    font-weight: 400;
+                    width: 28vw;
+                }
+            }
+            .cardsGrid {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                gap: 2vh 1vw; 
+
+                .miniCard {
+                    flex-basis: 48%; 
+                    height: 9vh; 
+                    border-radius: 6px;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    box-sizing: border-box;
+
+                    .cardContent {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 1vw; 
+
+                        .iconArea {
+                            width: 3.2vw;
+                            height: 3.2vw;
+                            background-color: #ffffff1e;
+                            border-radius: 4px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            img {
+                                width: 45%;
+                                height: auto;
+                            }
+                        }
+
+                        h3 {
+                            color: #ffffff;
+                            font-size: 1.1rem;
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+            .linkActionZone {
+                display: flex;
+                justify-content: flex-end; 
+                align-items: center;
+                width: 82%;
+                height: 4vh;
+                a {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.8vw; 
+                    color: #ffffff;
+                    text-decoration: none;
+                    font-size: 1.1rem;
+                    font-weight: 600;
+                    transition: opacity 0.2s ease;
+                    list-style-type: none;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                   
+
+                    .arrowIcon {
+                        font-size: 1.1rem;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
